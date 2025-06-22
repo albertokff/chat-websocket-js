@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat com WebSocket</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css" integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Chat com WebSocket</h1>
+    <div id="chat"></div>
+    <input type="text" id="message" placeholder="Digite sua mensagem...">
+    <button id="sendBtn">Enviar</button>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+        <h4>Bem-vindo ao chat!</h4>
+        <p>Digite seu nome:</p>
+        <div class="input-group input-group-sm mb-3">
+            <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <button id="closeModalBtn" class="close-btn">Entrar</button>
+        </div>
+    </div>
+
+    <script src="src/js/chat.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.bundle.min.js" integrity="sha512-Tc0i+vRogmX4NN7tuLbQfBxa8JkfUSAxSFVzmU31nVdHyiHElPPy2cWfFacmCJKw0VqovrzKhdd2TSTMdAxp2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
